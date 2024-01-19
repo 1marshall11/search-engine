@@ -1,0 +1,42 @@
+<div class="container">
+  <div style="margin: 30px;">
+    <div class="glitch-wrapper">
+      <div class="glitch" data-glitch="HELLO">HELLO</div>
+   </div>
+    <input type="text" [(ngModel)]="data" class="form-control" placeholder="Add Your Text Here">
+   
+  
+
+    <div class="input-group-append">
+      <button type="button" (click)="generateText()" class="btn btn-primary" >Submit</button>
+    </div>
+     <!--
+      <div class="card" *ngFor="let response of textList" style="white-space:pre-wrap">
+      <div class="card-header">
+        <div class="input-group mb-3">
+           <input type="text" [(ngModel)]="response.text" class="form-control" placeholder="Add Your Text Here"> 
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-text">{{response.response}}</p>
+      </div>
+    </div>
+  -->
+  <div class="card-body" >
+    <p class="card-text" style="white-space:pre-wrap">{{display_string}}</p>
+  </div>
+  
+  </div>
+</div>
+<div class="suggest-sch1" (click)="handleClick()">
+  Tech
+</div>
+<div class="suggest-sch2" (click)="handleClick2()">
+  A.I
+  </div>
+  <div class="suggest-sch3" (click)="handleClick3()">
+    Current trend 
+    </div>
+    <div class="suggest-sch4" (click)="handleClick4()">
+      10 movies to watch in 2022 
+      </div>
